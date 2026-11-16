@@ -28,7 +28,7 @@
     <h2>3. Какие данные мы обрабатываем</h2>
     <p><b>Данные аккаунта Telegram:</b> числовой идентификатор аккаунта, имя пользователя (username), язык интерфейса. Имя из профиля показывается в мини-приложении, но не сохраняется.</p>
     <p><b>Данные подписки:</b> тариф, срок действия, отметка о пробном периоде, сведения о приостановке подписки, бонусный баланс, число приглашённых друзей и начисленные за них бонусы, кто пригласил пользователя (только до первой оплаты).</p>
-    <p><b>Данные устройств:</b> ключи доступа, названия устройств, которые им дал пользователь, дата добавления и первого подключения, объём трафика и время последнего подключения по каждому устройству.</p>
+    <p><b>Данные устройств:</b> ключи доступа, названия устройств, которые им дал пользователь, дата добавления и первого подключения, объём трафика и время последнего подключения по каждому устройству. Когда приложение скачивает подписку, сохраняются модель устройства, его система и название приложения, а идентификатор устройства — только в виде необратимого хеша: так владелец ключа видит, если ключом начали пользоваться на чужом устройстве.</p>
     <p><b>Данные приложения для телефона:</b> хешированный (необратимо преобразованный) идентификатор телефона, по которому приложение узнаёт аккаунт.</p>
     <p><b>Данные заказов и оплат:</b> выбранный тариф, сумма и способ оплаты, номер заказа у платёжного сервиса, ссылка на чек в «Мой налог». Данные банковских карт мы не получаем: их вводят на странице платёжного сервиса.</p>
     <p><b>Обращения в поддержку:</b> текст сообщений, которые пользователь пишет в поддержку.</p>
@@ -42,6 +42,7 @@
       <li>выполнить требования закона, в том числе сформировать чек в «Мой налог» по Федеральному закону № 422-ФЗ;</li>
       <li>отвечать на обращения в поддержку и сообщать о сроке подписки, оплатах и работе Сервиса;</li>
       <li>начислять бонусы по реферальной программе;</li>
+      <li>видеть, как пользуются Сервисом (например, кто начал пробный период или оплатил подписку), чтобы улучшать его; сведения о посещаемых сайтах для этого не используются и не собираются;</li>
       <li>защищать Сервис от злоупотреблений: повторного получения пробного периода, перепродажи доступа, автоматических атак.</li>
     </ul>
     <p>4.2. Правовые основания: исполнение договора, стороной которого является пользователь (пункт 5 части 1 статьи 6 Закона № 152-ФЗ), исполнение обязанностей, возложенных законом (пункт 2), и согласие пользователя для необязательных данных (пункт 1).</p>
@@ -129,7 +130,7 @@
     <h2>3. What we process</h2>
     <p><b>Telegram account:</b> numeric account id, username, interface language. The profile name is shown in the Mini App but not stored.</p>
     <p><b>Subscription:</b> plan, end date, trial mark, pause details, bonus balance, number of invited friends and bonuses earned for them, who invited the user (only until the first payment).</p>
-    <p><b>Devices:</b> access keys, device names the user chose, date added and first connected, traffic volume and last connection time for each device.</p>
+    <p><b>Devices:</b> access keys, device names the user chose, date added and first connected, traffic volume and last connection time for each device. When an app fetches the subscription, the device model, system and app name are kept, and the device id only as an irreversible hash, so the key's owner can see when the key is used on someone else's device.</p>
     <p><b>Phone app:</b> a hashed (irreversibly transformed) phone id that lets the app find the account.</p>
     <p><b>Orders and payments:</b> chosen plan, amount and method, the payment service's order number, the link to the receipt in «Мой налог». We never receive card details: they are entered on the payment service's page.</p>
     <p><b>Support requests:</b> the text of messages the user sends to support.</p>
@@ -143,6 +144,7 @@
       <li>meet legal duties, including issuing receipts in «Мой налог» under Federal Law 422-FZ;</li>
       <li>answer support requests and tell the user about their subscription, payments and the Service;</li>
       <li>credit referral bonuses;</li>
+      <li>see how the Service is used (for example, who started a trial or paid) in order to improve it; nothing about visited websites is collected or used for this;</li>
       <li>protect the Service from abuse: repeat trials, resale of access, automated attacks.</li>
     </ul>
     <p>4.2. Legal grounds: performance of a contract to which the user is a party (Article 6(1)(5) of Law 152-FZ), legal obligations (Article 6(1)(2)), and the user's consent for optional data (Article 6(1)(1)).</p>

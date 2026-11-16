@@ -598,6 +598,8 @@ a.ghost { color: var(--fg); }
 .document h1 { font-size: 24px; letter-spacing: -.02em; }
 .document h2 { margin-top: 24px; }
 .document a { color: inherit; }
+.document p { margin: 0 0 10px; }
+.document li { margin-bottom: 4px; }
 .document hr { margin: 32px 0; border: 0; border-top: 1px solid var(--line); }
 .document h3 { margin-top: 20px; font-size: 16px; }
 .document .hint { color: var(--muted); font-size: 14px; }
